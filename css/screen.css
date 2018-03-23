@@ -165,7 +165,45 @@ a:focus {
     Object: Object name
     ---
     Object description
-*/
+    /*
+        Objects: Row
+        ---
+        Creates a horizontal row that stretches the viewport and adds padding around children
+    */
+
+    .o-row {
+        overflow: auto;
+        padding: 24px 24px 0;
+    }
+
+    .o-row--primary {
+        background-color: #e85e00;
+        color: #fff;
+    }
+
+    .o-row--grey-dark {
+        background-color: #111;
+        color: #fff;
+    }
+
+    @media (min-width: 768px) {
+        .o-row--lg {
+            padding: 48px 48px 24px;
+        }
+    }
+    /*
+        Objects: Container
+        ---
+        Creates a horizontal container that sets de global max-width
+    */
+
+    .o-container {
+        max-width: 90em; /* 1440px / 40 = 90em */
+        margin: 0 auto;
+        
+    }
+
+
 
 /*------------------------------------*\
   #COMPONENTS
